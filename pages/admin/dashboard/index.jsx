@@ -241,7 +241,7 @@ function Index(props) {
 }
 
 export async function getStaticProps() {
-    const response = await axios.get(`${process.env.NEXT_PUBLIC_API}`);
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_FETCH}`);
     return {
         props: {
             posts: response.data,

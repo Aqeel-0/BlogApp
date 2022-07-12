@@ -54,7 +54,7 @@ function CreatePost() {
         
             <div className="max-w-5xl mx-auto">
                 <Header />
-                <div className=" h-screen w-9/12 mx-auto relative">
+                <div className="z-0 h-screen w-9/12 mx-auto relative">
                     <div className="flex justify-center mb-5 text-red-600 text-xl absolute left-[40%] top-[-50px]">
                         {err && <h1>{err}</h1>}
                     </div>
@@ -74,7 +74,7 @@ function CreatePost() {
                                     py-1.5
                                     text-lg
                                     font-bold
-                                    text-gray-700
+                                    text-white
                                     bg-gray-900
                                     
                                     rounded
@@ -82,7 +82,7 @@ function CreatePost() {
                                     ease-in-out
                                     m-0
                                     outline-none
-                                    focus:text-white focus:border-blue-600"
+                                    focus:border-blue-600"
                             type="text"
                             placeholder="Title..."
                             name="title"
@@ -90,7 +90,7 @@ function CreatePost() {
                         />
                         <input
                             onChange={imageHandeler}
-                            className="px-3 py-1.5 rounded-md   bg-gray-900 mb-16 text-lg font-bold focus:text-white focus:border-blue-600 transition ease-in-out"
+                            className="px-3 py-1.5 rounded-md   bg-gray-900 mb-16 text-lg font-bold text-white focus:border-blue-600 transition ease-in-out"
                             type="text"
                             placeholder="image url..."
                             name="image"
@@ -98,7 +98,7 @@ function CreatePost() {
                         />
                         <textarea
                             onChange={bodyHandeler}
-                            className="pl-3 pt-2 pb-2 pr-4 rounded-md border border-solid border-gray-300 bg-gray-900 focus:outline-none focus:text-white text-base mb-3"
+                            className="pl-3 pt-2 pb-2 pr-4 rounded-md border border-solid border-gray-300 bg-gray-900 focus:outline-none text-white text-base mb-3"
                             type="text"
                             rows="9"
                             cols="70"

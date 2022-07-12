@@ -111,7 +111,7 @@ export async function getServerSideProps({params}){
     const {postId} = params
     const result = await axios({
         method:'get',
-        url:`${process.env.NEXT_PUBLIC_API}/post`,
+        url:`${process.env.NEXT_PUBLIC_API_FETCH}/post`,
         data: {
             id: postId
         }

@@ -88,7 +88,7 @@ export default function Post({data}) {
     
       <div className="mt-6 mx-auto w-3/4 flex flex-col">
         <div className='w-3/4 mx-auto h-40 '>
-          <img className='w-full h-full object-contain md:object-fit' src={data.image} />
+          <img className='w-[80%] mx-auto h-full object-contain md:object-fill' src={data.image} />
         </div>
         <div className= 'sm:w-3/4 sm:mx-auto'>
           <h1 className= 'text-3xl text-[#cdcdcd]'>{data.title}</h1>
@@ -182,7 +182,7 @@ export async function getServerSideProps({req, res, params}){
     const {postId} = params
     const result = await axios({
       method:'get',
-      url:`${process.env.NEXT_PUBLIC_API}/post`,
+      url:`${process.env.NEXT_PUBLIC_API_FETCH}/post`,
       data: { id: postId}
     
     })

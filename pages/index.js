@@ -41,7 +41,7 @@ export default function Index(props) {
 // }
 
 export async function getServerSideProps(){
-  const response = await axios.get(`${process.env.NEXT_PUBLIC_API}`)
+  const response = await axios.get(`${process.env.NEXT_PUBLIC_API_FETCH}`)
   return {
     props: {
       blogdata : response.data

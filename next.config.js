@@ -7,6 +7,14 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'http://localhost:5000/:path*' // Proxy to Backend
+      }
+    ]
+  },
 }
 
 module.exports = nextConfig

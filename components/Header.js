@@ -186,7 +186,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className={toggle? "absolute z-10 w-56 h-[29rem] bg-gray-800 top-[65px] left-[165px] transition-[all_5s_ease-in-out]" : "absolute z-10 w-36 h-[29rem] bg-white  top-[-30rem] left-[-9rem] transition-[all_5s_ease-in-out]" }>
+      <div className={toggle? "absolute z-10 w-56 h-[29rem] bg-gray-800 top-[65px] left-[160px] transition-[all_5s_ease-in-out]" : "absolute z-10 w-36 h-[29rem] bg-white  top-[-30rem] left-[-9rem] transition-[all_5s_ease-in-out]" }>
         <div className="flex flex-col mt-5 h-full justify-start">
           <Link href="/">
             <a className="w-full flex justify-center">

@@ -30,7 +30,7 @@ function Post({blogItem}) {
     try {
       const result = await axios({
         method: "patch",
-        url: `http://localhost:5000/${id}`,
+        url: `${process.env.NEXT_PUBLIC_API}/${id}`,
         headers: { "auto-token": cookies.get("jwt") || "" },
       });
       if (result.data.message === "liked") {

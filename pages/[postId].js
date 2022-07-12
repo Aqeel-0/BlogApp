@@ -47,6 +47,7 @@ export default function Post({data}) {
   const deleteComment = async (e)=>{
     const commentId = e.target.parentNode.id
     const postId = data._id
+
     try {
       const result = await axios({
         method:'delete',
@@ -60,7 +61,7 @@ export default function Post({data}) {
   
  
   function filterComment(){
-    const temp =  comments.map(comm => (
+    const temp = comments.map(comm => (
         <div key={comm.id}>
             <div className='w-[100%]'>
               <div className='w-full p-2 flex'>
@@ -87,8 +88,8 @@ export default function Post({data}) {
       <Header/>
     
       <div className="mt-6 mx-auto w-3/4 flex flex-col">
-        <div className='w-3/4 mx-auto h-40 '>
-          <img className='w-[80%] mx-auto h-full object-contain md:object-fill' src={data.image} />
+        <div className='w-full md:w-3/4 mx-auto h-40 '>
+          <img className='w-full md:w-[80%] mx-auto h-full object-cover md:object-fill' src={data.image} />
         </div>
         <div className= 'sm:w-3/4 sm:mx-auto'>
           <h1 className= 'text-3xl text-[#cdcdcd]'>{data.title}</h1>
@@ -178,7 +179,7 @@ const Wrapper = styled.div`
 
 
 export async function getServerSideProps({req, res, params}){
-    console.log('called')
+  
     const {postId} = params
     const result = await axios({
       method:'get',

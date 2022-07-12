@@ -166,7 +166,7 @@ export default function User({ userData }) {
                 </div>
             </div>
 
-            <div className="w-[98%] mx-auto bg-gray-900 md:basis-[15%] md:h-full ">
+            <div className="w-[98%] mx-auto mb-auto bg-gray-900 md:basis-[15%] md:h-full ">
                 <div className="md:relative mx-auto lg:float-right lg:px-6">
                     <ul className="list-reset flex flex-row md:flex-col text-center md:text-left mt-10">
                         <li className="mr-3 flex-1">

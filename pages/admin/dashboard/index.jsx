@@ -101,7 +101,7 @@ function Index(props) {
     });
 
     return (
-        <div className="flex flex-col justify-between md:flex-row-reverse sm:h-screen">
+        <div className="flex flex-col h-screen justify-between md:flex-row-reverse sm:h-screen">
             <div className="w-full md:basis-[85%] md:border-l-2 md:border-sky-600 ">
 
                 <div className="h-[10%]">
@@ -192,7 +192,7 @@ function Index(props) {
                     </div>
                 </div>
             </div>
-            <div className="h-14 w-full bg-gray-900 md:basis-[15%] md:h-full">
+            <div className="h-14 w-full mb-auto bg-gray-900 md:basis-[15%] md:h-full">
                 <div className="md:relative mx-auto lg:float-right lg:px-6">
                     <ul className="list-reset flex flex-row md:flex-col text-center md:text-left mt-10">
                         <li className="mr-3 flex-1">
